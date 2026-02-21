@@ -1,0 +1,211 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT COLORS */
+:root {
+  --bg-light: #f8f7f5;
+  --text-dark: #1c1c1c;
+  --text-muted: #6b6b6b;
+  --accent: #b8a57f; /* subtle stone-gold */
+}
+
+/* BODY */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.2rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 2.2rem;
+  max-width: 620px;
+}
+
+/* BUTTON */
+.btn-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid var(--text-dark);
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--text-dark);
+  color: white;
+}
+
+/* PROJECTS SECTION */
+.projects {
+  padding: 120px 10%;
+  background-color: #ffffff;
+}
+
+.section-header {
+  max-width: 640px;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  letter-spacing: 0.08em;
+}
+
+.section-header p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+/* CARD */
+.project-card {
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+.project-info {
+  margin-top: 18px;
+}
+
+.project-info h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.project-info span {
+  font-size: 0.85rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* PROCESS SECTION */
+.process {
+  padding: 120px 10%;
+  background-color: var(--bg-light);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 60px;
+}
+
+/* STEP CARD */
+.process-step span {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.process-step h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.process-step p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* CONTACT */
+.contact {
+  padding: 140px 10%;
+  background-color: #ffffff;
+}
+
+.contact-wrapper {
+  max-width: 720px;
+}
+
+.contact-text h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.contact-text p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+.contact-details p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px 10%;
+  border-top: 1px solid #e6e6e6;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
