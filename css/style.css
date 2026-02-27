@@ -215,3 +215,55 @@ body {
   font-size: 0.85rem;
   color: var(--text-muted);
 }
+/* PROJECT DETAIL PAGE */
+
+.project-hero {
+  padding: 140px 10% 80px;
+  background-color: var(--bg-light);
+}
+
+.project-hero h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.project-meta {
+  font-size: 0.9rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-content {
+  padding: 80px 10%;
+  max-width: 960px;
+}
+
+.project-block {
+  margin-bottom: 48px;
+}
+
+.project-block h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.project-block p {
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.project-images img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
