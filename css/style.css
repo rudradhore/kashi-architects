@@ -54,6 +54,12 @@ body {
   margin-bottom: 2.2rem;
   max-width: 620px;
 }
+.seo-text {
+  max-width: 720px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 24px;
+}
 
 /* BUTTON */
 .btn-primary {
